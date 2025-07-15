@@ -1,0 +1,182 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Header / Hero Section */
+.hero {
+  background-color: #0d1117;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero .logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #fca311;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fca311;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  background-color: #fca311;
+  color: #0d1117;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.hero-buttons a:hover {
+  background-color: #ffb627;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #1f2937;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fca311;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* About */
+#about p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about {
+  text-align: center; /* Button ko horizontally center karega */
+  padding: 50px 0;
+}
+
+#about .btn {
+  display: inline-block;
+  background-color: #fca311;
+  color: #0d1117;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+
+#about .btn:hover {
+  background-color: #ffb627;
+}
+
+/* Projects */
+.project-card {
+  background-color: #1f2937;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #fca311;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  color: #fca311;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #e2e8f0;
+}
+
+/* Achievements */
+#achievements ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#achievements li {
+  background-color: #1f2937;
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 12px 18px;
+  border-radius: 5px;
+  border-left: 4px solid #fca311;
+  color: #cbd5e1;
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: #fca311;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1117;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons a {
+    margin: 8px 5px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
