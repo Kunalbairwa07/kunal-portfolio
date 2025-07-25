@@ -1,80 +1,141 @@
-<!DOCTYPE html> <!--Kunal Bairwa-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunal Bairwa | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunal Bairwa | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Kunal Bairwa | AI & Data Science Portfolio">
+  <meta property="og:description" content="AI & Data Science Student | Projects | Skills | Achievements | Contact">
+  <meta property="og:image" content="assets/logo.jpeg">
 </head>
 <body>
+  <!-- Toggle Theme Button -->
+  <button id="theme-toggle" aria-label="Toggle Theme"></button>
 
-    <!-- Header / Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <img src="assets/logo.jpeg" alt="Kunal Logo" class="logo">
-            <h1>Hi, I'm <span>Kunal Bairwa</span></h1>
-            <p>| AI & Data Science Student |</p>
-            <div class="hero-buttons">
-                <a href="https://github.com/Kunalbairwa07" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/kunal-bairwa-237826294" target="_blank">LinkedIn</a>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <img src="assets/logo.jpeg" alt="Kunal Logo" class="nav-logo">
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="container">
+      <img src="assets/logo.jpeg" alt="Kunal Bairwa" class="logo">
+      <h1 class="typewriter">Hi, I'm <span>Kunal Bairwa</span></h1>
+      <h2 class="hero-type">AI & Data Science Student</h2>
+      <div class="hero-buttons">
+        <a href="https://github.com/Kunalbairwa07" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/kunal-bairwa-237826294" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        👋 I am a passionate AI & Data Science undergraduate at JECRC Foundation (RTU), focused on innovative, real-world problem-solving with technology. Skilled in programming, analytics, and automation—always keen to learn, build, and collaborate.
+      </p>
+      <a href="assets/KUNAL-BAIRWA-RESUME.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="assets/cpp.svg" alt="C++">C++</div>
+        <div class="skill-card"><img src="assets/python.svg" alt="Python">Python</div>
+        <div class="skill-card"><img src="assets/javascript.svg" alt="JavaScript">JavaScript</div>
+        <div class="skill-card"><img src="assets/postgresql.svg" alt="SQL">SQL</div>
+        <div class="skill-card"><img src="assets/linux.svg" alt="Linux">Linux</div>
+        <div class="skill-card"><img src="assets/html5.svg" alt="HTML5">HTML5</div>
+        <div class="skill-card"><img src="assets/css.svg" alt="CSS3">CSS3</div>
+        <div class="skill-card"><img src="assets/nodedotjs.svg" alt="Node.js">Node.js</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/project1.png" alt="Blood Donation Management System">
+          <h3>Blood Donation Management System</h3>
+          <p>
+            Web platform with HTML, CSS, JS, Node.js, and MySQL. Features donor registration, blood request, and admin dashboard—focused on simplifying & improving blood management.
+          </p>
+          <div class="project-tags">
+            <span>Node.js</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Kunalbairwa07/Blood-Donation-Management-System" target="_blank" class="btn small">View on GitHub</a>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a student of AI & Data Science at JECRC Foundation (RTU), with a strong interest in Programming, Data Structures & Algorithms (DSA), and Cybersecurity.
-Skilled in C++, HTML, CSS, JavaScript, SQL, and Linux, I actively contribute on GitHub and continuously work on learning and building new projects.
-            </p>
-            <a href="assets/KUNAL-BAIRWA-RESUME.pdf" class="btn" download>Download Resume</a>
+        <div class="project-card">
+          <img src="assets/project2.png" alt="Smart Irrigation System">
+          <h3>Smart Irrigation System</h3>
+          <p>
+            IoT & automation project using NodeMCU, sensors, Blynk app. Real-time soil and water data for smart, sustainable irrigation.
+          </p>
+          <div class="project-tags">
+            <span>IoT</span><span>NodeMCU</span><span>Blynk</span><span>Automation</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Blood Donation Management System</h3>
-                <p>Web-based system built with HTML, CSS, JS, Node.js, MySQL. Donor registration, blood request, admin dashboard –.</p>
-            </div>
-            <div class="project-card">
-                <h3>Smart Irrigation System</h3>
-                <p>Developed an automated irrigation system using NodeMCU, sensors, and the Blynk app to monitor soil conditions and control water flow. The solution helps conserve water and improves irrigation efficiency by enabling real-time control and automation.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul>
+        <li>🏆 Top Team - Smart India Hackathon Prelims</li>
+        <li>🥇 Winner - BhashaBandhu Hackathon (Microsoft + Bhashini)</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <div class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li>🏆 Top team in Smart India Hackathon Prelims</li>
-                <li>🥇 Winner in BhashaBandhu Hackathon (Microsoft + Bhashini)</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      
+      <form class="contact-form" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name*" required>
+        <input type="email" name="email" placeholder="Email*" required>
+        <textarea name="message" rows="5" placeholder="Message*" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-details">
+        <p>Email: <a href="mailto:kunalbairwa2580@gmail.com">kunalbairwa2580@gmail.com</a></p>
+        <p>Phone: +91 8269558801</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:kunalbairwa2580@gmail.com">kunalbairwa2580@gmail.com</a></p>
-            <p>Phone: +91 8269558801</p>
-        </div>
-    </section>
+  <footer>
+    <div class="container">
+      <p>© 2025 Kunal Bairwa | Made with ❤️</p>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Kunal Bairwa | Made with ❤️</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
